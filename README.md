@@ -24,5 +24,6 @@ Werkzeug==0.16.0<br/>
 xgboost==0.90<br/>
 # Application
 <a href="https://appsalzheimer.herokuapp.com/predict">https://appsalzheimer.herokuapp.com/</a>
-#How to cite ?
+<br/>
+# How to cite ?
 yet to come
