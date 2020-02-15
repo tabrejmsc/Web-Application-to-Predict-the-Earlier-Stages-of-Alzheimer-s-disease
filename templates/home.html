@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<meta charset="UTF-8">
+<title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+<style type="text/css">
+<!--
+.style2 {color: #000000}
+.style3 {color: #FFFFFF}
+-->
+</style>
+</head>
+
+<body>
+
+ <div style="background-color:lightblue">
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000099">
+      <tr>
+        <td><p>&nbsp;</p>
+        <p><h1 class="style3">An Ensemble-Learning Based Web Application to Predict the Earlier Stages of Alzheimer’s disease</h1>
+        </p>
+        <p>&nbsp;</p></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr bgcolor="#CCCCCC">
+        <td bordercolor="#000000">
+        <h2 class="style2">&nbsp;&nbsp; &nbsp;   <a href="#">Home</a> | <a href="#">About Us</a> | <a href="#">Contact Us</a></h2></td>
+      </tr>
+    </table>
+	<p><strong>Background</strong><br>
+	  The Cerebrospinal  fluid (CSF) provides a pool of well-established biomarkers namely A&beta;42, tau,  p-tau that can detect the earlier stages of Alzheimer's Disease (AD) with an acceptable  level of accuracy. Therefore we have utilized a proteomic screen of Cerebrospinal  Fluid (CSF) from well-characterized Mild Cognitive Impaired (MCI) and cognitively  normal subjects to look for a novel set of protein biomarkers that can predict  the earlier stages of AD with greater accuracy than A&beta;42, tau, and p-tau  proteins. <br>
+  <strong>Methods and  Findings</strong><br>
+	  Person Correlation  Coefficient was used to filter out features having a Correlation Coefficient  &gt; 0.99. Recursive Feature Elimination (RFE) method utilizing a cost-sensitive  Linear Support Vector Machine (SVM) was used to produce a set of three most  informative features (Cystatin C, MMP10, and tau proteins). Mean levels of Cystatin  C, MMP10, and tau proteins were found to be significant at 95 % Confidence Interval  (CI) between cognitive normal (CDR 0) and cognitively impaired groups (CDR &ge; 0.5).  An ensemble model was created using the three most informative features by  averaging the output probability of the two best performing classifier based  predictive models (Logistic regression and Linear SVM). The ROC_AUC, PR_AUC,  and Sensitivity results at 80 % specificity showed that the ensemble model  performed significantly better at 95 % CI in discriminating CDR 0 from CDR &gt;  0 subjects than similar predictive model generated using a conventional set of  CSF protein biomarkers (tau, p_tau, and Ab_42). A web application of our  ensemble model to detect the earlier stages of AD was generated using Flask and  was later deployed on Heroku at <a href="https://alzpredict.herokuapp.com">https://alzpredict.herokuapp.com</a>. <br>
+  <strong>Conclusions</strong><br>
+	  Our  online ensemble-based prediction system is one of its kind for predicting the  early stages of AD using CSF protein biomarkers. <br>
+  <strong>Keywords:</strong> Mild Cognitive Impairment (MCI),  Alzheimer's disease (AD), Cerebrospinal Fluid (CSF) protein biomarkers, Recursive Feature Elimination method,  ensemble-learning model, online prediction system. </p>
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000099">
+     <tr>
+       <td>&nbsp;</td>
+     </tr>
+     <tr>
+       <td><div align="center" class="style3">CopyWrite@2020</div></td>
+     </tr>
+     <tr>
+       <td>&nbsp;</td>
+     </tr>
+   </table>
+</div>
+
+
+</body>
+</html>

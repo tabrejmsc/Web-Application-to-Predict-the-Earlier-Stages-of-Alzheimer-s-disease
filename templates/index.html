@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+<meta charset="UTF-8">
+<title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+<style type="text/css">
+<!--
+.style2 {color: #000000}
+.style3 {color: #FFFFFF}
+-->
+div {
+  height: 90px;
+  width: 500px;
+  background-color: powderblue;
+}
+</style>
+</head>
+
+<body>
+
+ <div style="background-color:lightblue" align="center" >
+	<table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000099">
+      <tr>
+        <td><p>&nbsp;</p>
+        <p>
+        <h1 class="style3">Predict the Earlier Stages of Alzheimer’s disease</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr bgcolor="#CCCCCC">
+        <td bordercolor="#000000">
+        <h2 class="style2">&nbsp;&nbsp; &nbsp;</h2></td>
+      </tr>
+    </table>
+	<h1> Predict Alzheimer Disease</h1>
+  
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+       
+        Cystatin C: <input type="text" name="Cystatin_C"  required="required" /></br></br>
+        MMP10: <input type="text" name="MMP10"  required="required" /></br></br>
+        Tau: <input type="text" name="tau"  required="required" /></br></br>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></br></br>
+    </form>
+
+   <br>
+   <br>
+   
+   <h1>{{ prediction_text }}</h1>
+   
+
+   <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000099">
+     <tr>
+       <td>&nbsp;</td>
+     </tr>
+     <tr>
+       <td><div align="center" class="style3">CopyWrite@2020</div></td>
+     </tr>
+     <tr>
+       <td>&nbsp;</td>
+     </tr>
+   </table>
+</div>
+
+
+</body>
+</html>
