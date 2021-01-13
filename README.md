@@ -34,4 +34,4 @@ xgboost==0.90<br/>
 <a href="https://appsalzheimer.herokuapp.com/predict">https://appsalzheimer.herokuapp.com/</a>
 <br/>
 # How to cite ?
-yet to come
+A. H. Syed and T. Khan, "Machine Learning-Based Application for Predicting Risk of Type 2 Diabetes Mellitus (T2DM) in Saudi Arabia: A Retrospective Cross-Sectional Study," in IEEE Access, vol. 8, pp. 199539-199561, 2020, doi: https://doi.org/10.1109/ACCESS.2020.3035026.
